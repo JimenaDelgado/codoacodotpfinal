@@ -1,9 +1,9 @@
 *{
     background-color: rgb(187, 155, 218);
     font-family: 'Montserrat', sans-serif;
-
+ 
 }
-
+ 
 header {
     text-decoration: none;
     display: flex;
@@ -12,6 +12,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    max-width: 100%;
 }
 .logo {
     color: rgb(187, 155, 218);
@@ -22,7 +23,7 @@ header {
     background-color: transparent;
 }
 .logo img{
-    
+   
     height: 50px;
     width: 50px;
     margin-right: 10px;
@@ -30,7 +31,7 @@ header {
     background-color: transparent;
 }
 .logo-nombre {
-    
+   
     background-color: transparent;
 }
 .título{
@@ -42,135 +43,130 @@ header {
     text-align: center;
     margin-left: 250px;
     margin-right: 240px;
+    max-width: 100%;
 }
-
+ 
 nav a {
     color:rgb(187, 105, 245);
     text-decoration: none;
     background-color: transparent;
     font-weight: 600;
     padding-right: 10px;
+    max-width: 100%;
 }
 nav a:hover{
     color: white;
 }
-/* @media (max-width:700px) {
+ @media (max-width:700px) {
     header{
         flex-direction: column;
-    } */
+    }
+}
     nav{
-        
+       
         background-color: transparent;
         padding: 10px 0px;
+        max-width: 100%;
     }
-
+ 
 .sidebar{
     background-color: transparent;
-
+ 
 }
  img{
-
+ 
     height: 350px;
     width: 660px;
-    /* align-content: center; */
-    /* margin-left: 250px;
-    margin-right: 250px; */
-   } 
+    max-width: 100%;
+   
+   }
    
    #parrafo{
     background-color: transparent;
     font-size: 15px;
-
-    /* margin-left: 250px;
-    margin-right: 250px; */
-
    }
-
-   /* .footer{
-    /* color: brown;
-    background-color: blueviolet; */
-    /* margin-left: 250px;
-    margin-right: 250px;
-   } */ 
-
-
+ 
+ 
+ 
+ 
    .contenedor {
-	width: 90%;
+    width: 90%;
     max-width: 1000px;
-	margin: 20px auto;
-	display: grid;
-	grid-gap: 20px;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(4, auto);
-
-	grid-template-areas: "header header header"
-						 "contenido contenido sidebar"
-						 "widget-1 widget-2 sidebar"
-						 "footer footer footer";
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+ 
+    grid-template-areas: "header header header"
+                         "contenido contenido sidebar"
+                         "widget-1 widget-2 sidebar"
+                         "footer footer footer";
 }
-
+ 
 .contenedor > div,
 .contenedor .header,
 .contenedor .contenido,
 .contenedor .sidebar,
 .contenedor .footer {
-	background: #fff;
-	padding: 20px;
-	border-radius: 1px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 1px;
 }
-
+ 
 .contenedor .header {
-	background-color: blueviolet;
-	color: #fff;
-	grid-area: header;
+    background-color: blueviolet;
+    color: #fff;
+    grid-area: header;
 }
-
+ 
 .contenedor .contenido {
-	grid-area: contenido;
+    grid-area: contenido;
     background-color: rgb(187, 105, 245);
 }
-
+ 
 .contenedor .sidebar {
-	grid-column: 3 / 4;
-	 background-color: rgb(181, 105, 245); 
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 100px;
-	grid-area: sidebar;
+    grid-column: 3 / 4;
+     background-color: rgb(181, 105, 245);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: sidebar;
 }
 .contenedor .widget-1,
 .contenedor .widget-2 {
-	background: rgb(187, 155, 218);
-	color: #fff;
-	height: 100px;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    background: rgb(187, 155, 218);
+    color: #fff;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+ 
 .contenedor .widget-1 {
-	grid-area: widget-1;
+    grid-area: widget-1;
 }
-
+ 
 .contenedor .widget-2 {
-	grid-area: widget-2;
+    grid-area: widget-2;
 }
-
+ 
 .contenedor .footer {
-	background: #12203E;
-	color: #fff;
-	grid-area: footer;
+    background: #12203E;
+    color: #fff;
+    grid-area: footer;
 }
-
-@media screen and (max-width: 768px){
-	.contenedor {
-		grid-template-areas: "header header header"
-						 "contenido contenido contenido"
-						 "sidebar sidebar sidebar"
-						 "widget-1 widget-1 widget-2"
-						 "footer footer footer";
-	}
+ 
+@media screen and (max-width: 600px){
+    .contenedor {
+        grid-template-areas: "header header header"
+                         "contenido contenido contenido"
+                         "sidebar sidebar sidebar"
+                         "widget-1 widget-1 widget-2"
+                         "footer footer footer";
+    }
+ 
 }
